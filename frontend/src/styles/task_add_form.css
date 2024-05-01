@@ -1,0 +1,26 @@
+@import "@/styles/globals.css";
+
+button[name="day"] {
+  @apply border-none bg-inherit;
+}
+
+button:focus[name="day"] {
+  box-shadow: none;
+}
+
+.input-datetime {
+  @apply flex py-2 px-4 border border-solid rounded-md border-slate-300;
+  color-scheme: light;
+}
+
+.input-datetime::-webkit-calendar-picker-indicator {
+  @apply p-2;
+  filter: contrast(0.8) brightness(1.2);
+  background-image: url("../assets/icons/calendar-fold.svg");
+  z-index: 1;
+}
+
+.input-datetime::-webkit-calendar-picker-indicator:hover {
+  @apply bg-zinc-300 rounded-md p-2;
+  filter: invert(1);
+}

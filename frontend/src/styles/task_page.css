@@ -1,0 +1,15 @@
+@import "@/styles/globals.css";
+
+#task-page {
+  @apply h-screen p-4 bg-slate-100;
+
+  }
+
+
+.add-task > button {
+  @apply border-none bg-inherit;
+}
+
+.add-task > button:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,22 @@
+@import "@/styles/globals.css";
+
+#auth-page {
+  @apply flex flex-col items-center justify-center h-screen bg-slate-100;
+}
+
+.auth-tabs {
+  @apply flex justify-center;
+}
+
+.auth-tabs > button {
+  @apply border-none bg-inherit;
+}
+
+.auth-tabs > button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.auth-card {
+  @apply flex flex-col justify-center w-96 bg-slate-950 rounded-lg;
+}
